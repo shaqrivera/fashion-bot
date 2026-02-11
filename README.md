@@ -74,16 +74,16 @@ open FashionBot.xcodeproj
 ```bash
 # Build
 xcodebuild build -scheme FashionBot \
-  -destination 'platform=iOS Simulator,name=iPhone 16'
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
 
 # Run unit tests
 xcodebuild test -scheme FashionBot \
-  -destination 'platform=iOS Simulator,name=iPhone 16' \
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
   -only-testing:FashionBotTests
 
 # Run UI tests
 xcodebuild test -scheme FashionBot \
-  -destination 'platform=iOS Simulator,name=iPhone 16' \
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
   -only-testing:FashionBotUITests
 ```
 
