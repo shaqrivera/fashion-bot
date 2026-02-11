@@ -15,4 +15,5 @@ struct OutfitsView: View {
 
 #Preview {
     OutfitsView()
+        .modelContainer(try! ModelContainerFactory.createPreview())
 }

@@ -35,4 +35,5 @@ struct MainTabView: View {
 
 #Preview {
     MainTabView()
+        .modelContainer(try! ModelContainerFactory.createPreview())
 }

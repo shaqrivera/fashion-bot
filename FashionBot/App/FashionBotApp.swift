@@ -7,11 +7,6 @@ struct FashionBotApp: App {
         WindowGroup {
             MainTabView()
         }
-        .modelContainer(for: [
-            ClothingItem.self,
-            Outfit.self,
-            UserProfile.self,
-            OutfitHistory.self
-        ])
+        .modelContainer(for: ModelContainerFactory.modelTypes)
     }
 }

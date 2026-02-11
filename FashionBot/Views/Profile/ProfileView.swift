@@ -15,4 +15,5 @@ struct ProfileView: View {
 
 #Preview {
     ProfileView()
+        .modelContainer(try! ModelContainerFactory.createPreview())
 }
