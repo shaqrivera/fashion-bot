@@ -1,3 +1,4 @@
+import SwiftData
 import SwiftUI
 
 @main
@@ -6,5 +7,11 @@ struct FashionBotApp: App {
         WindowGroup {
             MainTabView()
         }
+        .modelContainer(for: [
+            ClothingItem.self,
+            Outfit.self,
+            UserProfile.self,
+            OutfitHistory.self
+        ])
     }
 }
