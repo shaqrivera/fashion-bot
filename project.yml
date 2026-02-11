@@ -1,0 +1,84 @@
+name: FashionBot
+options:
+  bundleIdPrefix: com.shaqrivera
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+
+targets:
+  FashionBot:
+    type: application
+    platform: iOS
+    sources:
+      - path: FashionBot
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        PRODUCT_BUNDLE_IDENTIFIER: com.shaqrivera.fashionbot
+        PRODUCT_NAME: FashionBot
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SWIFT_EMIT_LOC_STRINGS: YES
+        ENABLE_PREVIEWS: YES
+
+  FashionBotTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: FashionBotTests
+    dependencies:
+      - target: FashionBot
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.shaqrivera.fashionbot.tests
+        PRODUCT_NAME: FashionBotTests
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/FashionBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FashionBot"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+
+  FashionBotUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: FashionBotUITests
+    dependencies:
+      - target: FashionBot
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.shaqrivera.fashionbot.uitests
+        PRODUCT_NAME: FashionBotUITests
+        TEST_TARGET_NAME: FashionBot
+
+schemes:
+  FashionBot:
+    build:
+      targets:
+        FashionBot: all
+        FashionBotTests: [test]
+        FashionBotUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - FashionBotTests
+        - FashionBotUITests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
