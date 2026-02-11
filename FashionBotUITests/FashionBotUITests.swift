@@ -71,4 +71,30 @@ final class FashionBotUITests: XCTestCase {
         app.tabBars.buttons["Profile"].tap()
         XCTAssertTrue(app.staticTexts["Profile"].exists)
     }
+
+    // MARK: - Add Clothing Item
+
+    func testWardrobeHasAddButton() throws {
+        let addButton = app.navigationBars["Wardrobe"].buttons["Add Clothing Item"]
+        XCTAssertTrue(addButton.exists)
+    }
+
+    func testAddButtonPresentsSheet() throws {
+        app.navigationBars["Wardrobe"].buttons["Add Clothing Item"].tap()
+        XCTAssertTrue(app.navigationBars["Add Clothing Item"].waitForExistence(timeout: 2))
+    }
+
+    func testAddSheetHasCancelButton() throws {
+        app.navigationBars["Wardrobe"].buttons["Add Clothing Item"].tap()
+        XCTAssertTrue(app.navigationBars["Add Clothing Item"].waitForExistence(timeout: 2))
+        XCTAssertTrue(app.buttons["Cancel"].exists)
+    }
+
+    func testAddSheetCancelDismisses() throws {
+        app.navigationBars["Wardrobe"].buttons["Add Clothing Item"].tap()
+        XCTAssertTrue(app.navigationBars["Add Clothing Item"].waitForExistence(timeout: 2))
+        app.buttons["Cancel"].tap()
+        // After dismissal, we should be back to the Wardrobe nav bar
+        XCTAssertTrue(app.navigationBars["Wardrobe"].waitForExistence(timeout: 2))
+    }
 }

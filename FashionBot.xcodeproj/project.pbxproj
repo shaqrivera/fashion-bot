@@ -16,10 +16,16 @@
 		47A24701A26471A1494B3001 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B454FA3D64DEB7B1B7A321F7 /* UserProfile.swift */; };
 		54C88582F32247120FB77545 /* ModelContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7D613221F41B2F3C1D581 /* ModelContainerFactory.swift */; };
 		57F0C720F5B79518471F6CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10D0A549669CBC91EE8E548 /* Assets.xcassets */; };
+		5C21392AE51765DD28FF31B4 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55614E8C0AB6A18AA714AF8 /* ImageService.swift */; };
 		61D8D39A62F8B4DCD9D705AE /* OutfitHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E474C741A6C0765B92149 /* OutfitHistory.swift */; };
+		7A6674EB1F10E6467B2037A4 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5468C6D6EC86E9485E26A4B /* CameraPicker.swift */; };
 		83A7DD36D4D8956C73E1E7DD /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887A6839D0E5C79BCEE0A596 /* Outfit.swift */; };
+		89209939F4B8E9937C370633 /* AddClothingItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB80F151358CEF1043B194 /* AddClothingItemViewModelTests.swift */; };
+		8C02FFBDF7E76D4D883DA9C9 /* ImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503692A89C8AA5544ADF87A9 /* ImageServiceTests.swift */; };
 		AD453D7E0E64AAFD2A7D28A9 /* FashionBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F42E1A5E1FD8B748526C7 /* FashionBotUITests.swift */; };
 		C1FE3401753110B48A018469 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C09BEE0BEEB389FC56AA8 /* PersistenceTests.swift */; };
+		D8B29AEB722C0489FD764A8C /* AddClothingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3C549F8BFABFC8EFCBBD7 /* AddClothingItemViewModel.swift */; };
+		E069A66E7EE6847448509C36 /* AddClothingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FCFDCC9E41CA5796F4D260 /* AddClothingItemView.swift */; };
 		E57EA775DA3DDBFBED49E4BC /* ModelEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B70E904D4FF76C93D0FE024 /* ModelEnums.swift */; };
 		E87659308E00BAA1B79A7AB4 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C79F7909DE5F9F6850DAE /* ModelTests.swift */; };
 		EDB2847E7EB4F64998C06A22 /* OutfitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6032F665950777B8249C00B7 /* OutfitsView.swift */; };
@@ -46,9 +52,12 @@
 		25B0E1827D2AB8B0981DF773 /* FashionBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionBotApp.swift; sourceTree = "<group>"; };
 		337E474C741A6C0765B92149 /* OutfitHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitHistory.swift; sourceTree = "<group>"; };
 		3D773627BB568D5DE50BAA43 /* WardrobeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeView.swift; sourceTree = "<group>"; };
+		43F3C549F8BFABFC8EFCBBD7 /* AddClothingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothingItemViewModel.swift; sourceTree = "<group>"; };
 		46BD744777A5060ED182EF37 /* FashionBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionBotTests.swift; sourceTree = "<group>"; };
+		46FCFDCC9E41CA5796F4D260 /* AddClothingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothingItemView.swift; sourceTree = "<group>"; };
 		49AA512ABBC135C1E86BB186 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		4B70E904D4FF76C93D0FE024 /* ModelEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelEnums.swift; sourceTree = "<group>"; };
+		503692A89C8AA5544ADF87A9 /* ImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceTests.swift; sourceTree = "<group>"; };
 		6032F665950777B8249C00B7 /* OutfitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitsView.swift; sourceTree = "<group>"; };
 		6148563D408896A79401A29E /* FashionBotTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FashionBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B050EFDBD1D60D8C69F238 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
@@ -66,6 +75,9 @@
 		B454FA3D64DEB7B1B7A321F7 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		BFE10518E1F59BA01A53CD0E /* FashionBot.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FashionBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21C79F7909DE5F9F6850DAE /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		DEBB80F151358CEF1043B194 /* AddClothingItemViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothingItemViewModelTests.swift; sourceTree = "<group>"; };
+		E55614E8C0AB6A18AA714AF8 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		F5468C6D6EC86E9485E26A4B /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -99,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				7297CD86EC903FDB232D731B /* .gitkeep */,
+				43F3C549F8BFABFC8EFCBBD7 /* AddClothingItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -114,6 +127,7 @@
 		5194DBFB6E88CA1E95602A74 /* Wardrobe */ = {
 			isa = PBXGroup;
 			children = (
+				46FCFDCC9E41CA5796F4D260 /* AddClothingItemView.swift */,
 				3D773627BB568D5DE50BAA43 /* WardrobeView.swift */,
 			);
 			path = Wardrobe;
@@ -123,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				61B050EFDBD1D60D8C69F238 /* .gitkeep */,
+				F5468C6D6EC86E9485E26A4B /* CameraPicker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -156,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6C81DD070F3B0C51721F2F /* .gitkeep */,
+				E55614E8C0AB6A18AA714AF8 /* ImageService.swift */,
 				9EF7D613221F41B2F3C1D581 /* ModelContainerFactory.swift */,
 			);
 			path = Services;
@@ -182,7 +198,9 @@
 		E83321A0B415B0E576C44F10 /* FashionBotTests */ = {
 			isa = PBXGroup;
 			children = (
+				DEBB80F151358CEF1043B194 /* AddClothingItemViewModelTests.swift */,
 				46BD744777A5060ED182EF37 /* FashionBotTests.swift */,
+				503692A89C8AA5544ADF87A9 /* ImageServiceTests.swift */,
 				C21C79F7909DE5F9F6850DAE /* ModelTests.swift */,
 				AA0C09BEE0BEEB389FC56AA8 /* PersistenceTests.swift */,
 			);
@@ -318,8 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E069A66E7EE6847448509C36 /* AddClothingItemView.swift in Sources */,
+				D8B29AEB722C0489FD764A8C /* AddClothingItemViewModel.swift in Sources */,
+				7A6674EB1F10E6467B2037A4 /* CameraPicker.swift in Sources */,
 				43CB111AC046100301FEF242 /* ClothingItem.swift in Sources */,
 				0341ACD5FAFA7F121BE23B15 /* FashionBotApp.swift in Sources */,
+				5C21392AE51765DD28FF31B4 /* ImageService.swift in Sources */,
 				17AAC359C38786ECE0912F0C /* MainTabView.swift in Sources */,
 				54C88582F32247120FB77545 /* ModelContainerFactory.swift in Sources */,
 				E57EA775DA3DDBFBED49E4BC /* ModelEnums.swift in Sources */,
@@ -336,7 +358,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89209939F4B8E9937C370633 /* AddClothingItemViewModelTests.swift in Sources */,
 				2C52662AE0F6412CD2BF6433 /* FashionBotTests.swift in Sources */,
+				8C02FFBDF7E76D4D883DA9C9 /* ImageServiceTests.swift in Sources */,
 				E87659308E00BAA1B79A7AB4 /* ModelTests.swift in Sources */,
 				C1FE3401753110B48A018469 /* PersistenceTests.swift in Sources */,
 			);
@@ -410,6 +434,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "FashionBot needs camera access to photograph your clothing items.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "FashionBot needs photo library access to add clothing photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -590,6 +616,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "FashionBot needs camera access to photograph your clothing items.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "FashionBot needs photo library access to add clothing photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

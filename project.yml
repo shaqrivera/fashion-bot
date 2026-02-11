@@ -32,6 +32,8 @@ targets:
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         SWIFT_EMIT_LOC_STRINGS: YES
         ENABLE_PREVIEWS: YES
+        INFOPLIST_KEY_NSCameraUsageDescription: "FashionBot needs camera access to photograph your clothing items."
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "FashionBot needs photo library access to add clothing photos."
 
   FashionBotTests:
     type: bundle.unit-test
