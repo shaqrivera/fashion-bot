@@ -14,10 +14,12 @@
 		43CB111AC046100301FEF242 /* ClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D2054FA29ADADA3F19D6C /* ClothingItem.swift */; };
 		440315F71969B73A43AD731F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CD79F1F033115B9295A8EA /* ProfileView.swift */; };
 		47A24701A26471A1494B3001 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B454FA3D64DEB7B1B7A321F7 /* UserProfile.swift */; };
+		54C88582F32247120FB77545 /* ModelContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7D613221F41B2F3C1D581 /* ModelContainerFactory.swift */; };
 		57F0C720F5B79518471F6CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10D0A549669CBC91EE8E548 /* Assets.xcassets */; };
 		61D8D39A62F8B4DCD9D705AE /* OutfitHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E474C741A6C0765B92149 /* OutfitHistory.swift */; };
 		83A7DD36D4D8956C73E1E7DD /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887A6839D0E5C79BCEE0A596 /* Outfit.swift */; };
 		AD453D7E0E64AAFD2A7D28A9 /* FashionBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F42E1A5E1FD8B748526C7 /* FashionBotUITests.swift */; };
+		C1FE3401753110B48A018469 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C09BEE0BEEB389FC56AA8 /* PersistenceTests.swift */; };
 		E57EA775DA3DDBFBED49E4BC /* ModelEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B70E904D4FF76C93D0FE024 /* ModelEnums.swift */; };
 		E87659308E00BAA1B79A7AB4 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C79F7909DE5F9F6850DAE /* ModelTests.swift */; };
 		EDB2847E7EB4F64998C06A22 /* OutfitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6032F665950777B8249C00B7 /* OutfitsView.swift */; };
@@ -57,6 +59,8 @@
 		8A6C81DD070F3B0C51721F2F /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		8B9D2054FA29ADADA3F19D6C /* ClothingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingItem.swift; sourceTree = "<group>"; };
 		933F42E1A5E1FD8B748526C7 /* FashionBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionBotUITests.swift; sourceTree = "<group>"; };
+		9EF7D613221F41B2F3C1D581 /* ModelContainerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContainerFactory.swift; sourceTree = "<group>"; };
+		AA0C09BEE0BEEB389FC56AA8 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
 		AFC0E9EE0A4C99170BBD9D8D /* FashionBotUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FashionBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10D0A549669CBC91EE8E548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B454FA3D64DEB7B1B7A321F7 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6C81DD070F3B0C51721F2F /* .gitkeep */,
+				9EF7D613221F41B2F3C1D581 /* ModelContainerFactory.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			children = (
 				46BD744777A5060ED182EF37 /* FashionBotTests.swift */,
 				C21C79F7909DE5F9F6850DAE /* ModelTests.swift */,
+				AA0C09BEE0BEEB389FC56AA8 /* PersistenceTests.swift */,
 			);
 			path = FashionBotTests;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				43CB111AC046100301FEF242 /* ClothingItem.swift in Sources */,
 				0341ACD5FAFA7F121BE23B15 /* FashionBotApp.swift in Sources */,
 				17AAC359C38786ECE0912F0C /* MainTabView.swift in Sources */,
+				54C88582F32247120FB77545 /* ModelContainerFactory.swift in Sources */,
 				E57EA775DA3DDBFBED49E4BC /* ModelEnums.swift in Sources */,
 				83A7DD36D4D8956C73E1E7DD /* Outfit.swift in Sources */,
 				61D8D39A62F8B4DCD9D705AE /* OutfitHistory.swift in Sources */,
@@ -331,6 +338,7 @@
 			files = (
 				2C52662AE0F6412CD2BF6433 /* FashionBotTests.swift in Sources */,
 				E87659308E00BAA1B79A7AB4 /* ModelTests.swift in Sources */,
+				C1FE3401753110B48A018469 /* PersistenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
